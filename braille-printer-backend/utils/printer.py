@@ -7,7 +7,7 @@ from enum import Enum
 from utils.braille_to_gcode import DotPosition, GcodeAction, dot_pos_to_gcode
 
 # Replace with your printer's correct port
-port = "/dev/tty.usbserial-0001"
+port = "/dev/tty.usbserial-1110"
 baud_rate = 250000  # Adjust this to match your printer's baud rate
 
 DEBUG = False

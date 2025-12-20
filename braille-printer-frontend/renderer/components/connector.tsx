@@ -4,7 +4,7 @@ import { fetchApi } from "../utils/api";
 
 const ports = createListCollection({
   items: [
-    { label: "usbserial-0001", value: "/dev/tty.usbserial-0001" },
+    { label: "usbserial-1110", value: "/dev/tty.usbserial-1110" },
   ]
 });
 
@@ -40,7 +40,7 @@ interface ConnectorProps {
 }
 
 export const Connector = ({ isConnected, setIsConnected }: ConnectorProps) => {
-  const [port, setPort] = useState<string[]>(["/dev/tty.usbserial-0001"]);
+  const [port, setPort] = useState<string[]>(["/dev/tty.usbserial-1110"]);
   const [baudRate, setBaudRate] = useState<string[]>(["250000"]);
   const [loading, setLoading] = useState<boolean>(false);
 

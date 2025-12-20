@@ -17,8 +17,8 @@ groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 claude_model = "claude-3-haiku-20240307"
 groq_model = "llama-3.2-11b-vision-preview"
 
-groq_text_model = "llama3-8b-8192"
-groq_fast_model = "llama-3.2-1b-preview"
+groq_text_model = "llama-3.1-8b-instant"
+groq_fast_model = "llama-3.1-8b-instant"
 
 
 def extract_text_from_pdf(pdf_input, input_type="data"):
