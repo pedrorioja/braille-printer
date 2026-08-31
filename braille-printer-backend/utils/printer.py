@@ -77,7 +77,9 @@ class PrinterConnection:
         for _ in range(2):
             self.send_command("G1 E2.2 F200")
             self.send_command("G1 E-2.2 F200")
-        self.send_command("G1 E1.5 F200")
+        # Start the print with the punch mechanism released (tip up)
+        # to avoid dragging the paper on the first XY move.
+        self.send_command("G1 E-1.5 F200")
         self.send_command("G1 Z3 F800")
         # self.send_command("G1 Z10 F800")
         # input("Press Enter to continue...")
